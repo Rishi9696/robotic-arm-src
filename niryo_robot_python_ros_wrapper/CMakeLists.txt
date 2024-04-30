@@ -22,6 +22,7 @@ catkin_python_setup()
 
 catkin_package(
   CATKIN_DEPENDS
+  rospy
   actionlib_msgs
   geometry_msgs
   niryo_robot_arm_commander

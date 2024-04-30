@@ -33,7 +33,7 @@ def move_command(move_function):
     def wrapper(self, *args, **kwargs):
         # check if a collision happened previously
         if self._collision_detected:
-            rospy.logerr(f'{move_function.__name__} called with collision_detected still raised')
+           # rospy.logerr(f'{move_function.__name__} called with collision_detected still raised')
             raise NiryoRosWrapperException(
                 'clear_collision_detected() must be called before attempting a new move command')
 
